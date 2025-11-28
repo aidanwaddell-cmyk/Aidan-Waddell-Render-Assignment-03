@@ -1,0 +1,31 @@
+<%-include ../partials/header.ejs %>
+<%-include ../partials/main_nav.ejs %>
+<!--Main content for displaying my database-->
+<main class="container">
+    <div class="row">
+        <div class="offset-md-1 col-md-10">
+            <h1><%= title %></h1>
+            <br>
+            <table class="table table-bordered table-striped table-hover">
+                <!--Header Row-->
+                <tr class="d-flex">
+                    <th class="text-center col-2">Name</th>
+                    <th class="text-center col-2">Course</th>
+                    <th class="text-center col-1">Year</th>
+                    <th class="text-center col-4">Difficulties</th>
+                </tr>
+                <!--for/while loop-->
+                <% for(let count=0; count<BookList.length;count++) { %>
+                    <tr class="d-flex">
+                        <td class="text-center col-2"><%= BookList[count].name %></td>
+                        <td class="text-center col-2"><%= BookList[count].course %></td>
+                        <td class="text-center col-1"><%= BookList[count].year %></td>
+                        <td class="text-center col-4"><%= BookList[count].difficulties %></td>
+                    </tr>
+                <% } %>
+            </table>
+
+        </div>
+    </div>
+</main>
+<%-include ../partials/footer.ejs %>

@@ -1,0 +1,33 @@
+
+
+/* OPTIONAL: To ensure your text is readable over the image, 
+   you may want to give your main content area a slightly transparent background. 
+*/
+.text-content-area {
+    background-color: rgba(255, 255, 255, 0.9); /* White with 90% opacity */
+    padding: 20px;
+    margin: 20px auto; /* Center the content area horizontally */
+    max-width: 900px;  /* Give it a maximum width */
+    border-radius: 10px;
+}
+
+.text-content-area {
+    text-align: center;
+    font-weight: bold;
+    width: 100%; 
+}
+
+
+
+.text-content-area {
+    font-size: 32px; 
+    font-weight: bold;
+}
+
+.card {
+    width: 18rem; 
+    
+    margin: 20px auto; 
+}
+
+

@@ -1,0 +1,41 @@
+  <!--The below gives us the navigation page of our entire main navigation partial for the project.-->
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid justify-content-center">
+    <a class="navbar-brand text-center" href="/">Aidan's Tutoring Services!</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav justify-content-center mb-2 mb-lg-0"> 
+        <!--The below contains the directory towards our home page-->
+        <li class="nav-item">
+          <% if (title == "Home Page!") { %>
+            <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-lg fa-house"></i> Home</a>
+          <% } else { %>
+            <a class="nav-link" aria-current="page" href="/home"><i class="fa-solid fa-lg fa-house"></i> Home</a>
+          <% } %>
+        </li>
+        <!--The below contains the redirection to our submission for tutoring page-->
+        <li class="nav-item">
+          <% if (title == "Booking a session!") { %>
+            <a class="nav-link active" aria-current="page" href="/Books/add"><i class="fa-solid fa-lg fa-book"></i>Book a tutoring session!</a>
+          <% } else { %>
+            <a class="nav-link" aria-current="page" href="/Books/add"><i class="fa-solid fa-lg fa-book"></i>Book a tutoring session!</a>
+          <% } %>
+        </li>
+        <!--The below contains the list of current students enrolled for the tutoring service-->
+        <li class="nav-item">
+          <% if (title == "Booking a session!") { %>
+            <a class="nav-link active" aria-current="page" href="/Books/list"><i class="fa-solid fa-lg fa-list"></i>List of current students!</a>
+          <% } else { %>
+            <a class="nav-link" aria-current="page" href="/Books/list"><i class="fa-solid fa-lg fa-list"></i>List of current students!!</a>
+          <% } %>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
