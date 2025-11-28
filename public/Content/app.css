@@ -1,16 +1,14 @@
 
 
-/* OPTIONAL: To ensure your text is readable over the image, 
-   you may want to give your main content area a slightly transparent background. 
-*/
+/*Creating the design for the text-area*/
 .text-content-area {
-    background-color: rgba(255, 255, 255, 0.9); /* White with 90% opacity */
+    background-color: rgba(255, 255, 255, 0.9); 
     padding: 20px;
-    margin: 20px auto; /* Center the content area horizontally */
-    max-width: 900px;  /* Give it a maximum width */
+    margin: 20px auto; 
+    max-width: 900px;  
     border-radius: 10px;
 }
-
+/*Creating the design for the text-area*/
 .text-content-area {
     text-align: center;
     font-weight: bold;
@@ -18,7 +16,7 @@
 }
 
 
-
+/*Creating the design for the text-area*/
 .text-content-area {
     font-size: 32px; 
     font-weight: bold;
